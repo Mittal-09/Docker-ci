@@ -23,7 +23,7 @@ jobs:
         run: docker version
 
       - name: Deploy Flask and MySQL
-        shell: pwsh
+        shell: push
         run: docker compose up -d --build
 
       - name: Verify Containers
